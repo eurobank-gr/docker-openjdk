@@ -2,8 +2,7 @@ OpenJDK base image for running Java fat-jar applications
 ========================================================
 
 Features:
-- Use `debian:stretch-slim` base image (see: [Debian - Docker official images](https://hub.docker.com/_/debian))
-- Use production-ready open-source builds of the [Java Development Kit](http://openjdk.java.net/projects/jdk/11/)
+- Use `openjdk` base image (see: [openjdk - Docker official images](https://hub.docker.com/_/openjdk))
 - Set `/tmp` as user/working directory, to enable running as non-root (see: [Running Docker containers as non root](https://blog.csanchez.org/2017/01/31/running-docker-containers-as-non-root/))
 - Show settings at JVM startup for debugging
 - Set flag to exit on OutOfMemory error
