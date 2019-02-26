@@ -2,7 +2,7 @@ OpenJDK base image for running Java fat-jar applications
 ========================================================
 
 Features:
-- Use `openjdk` base image (see: [openjdk - Docker official images](https://hub.docker.com/_/openjdk))
+- Use `adoptopenjdk` base image (see: [Docker Images for Eclipse OpenJ9 Version 11 binaries built by AdoptOpenJDK.](https://hub.docker.com/r/adoptopenjdk/openjdk11-openj9))
 - Set `/tmp` as user/working directory, to enable running as non-root (see: [Running Docker containers as non root](https://blog.csanchez.org/2017/01/31/running-docker-containers-as-non-root/))
 - Show settings at JVM startup for debugging
 - Set flag to exit on OutOfMemory error
