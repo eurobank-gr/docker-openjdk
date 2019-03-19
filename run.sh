@@ -11,8 +11,9 @@
 DEFAULT_JAVA_OPTIONS="-XshowSettings \
  -XX:+UseG1GC \
  -XX:+ExitOnOutOfMemoryError \
- -XX:InitialRAMPercentage=50 \
- -XX:MaxRAMPercentage=80 \
+ -XX:MaxRAMFraction=2 \
+ -XX:+UnlockExperimentalVMOptions \
+ -XX:+UseCGroupMemoryLimitForHeap \
  -Duser.dir=/tmp"
 
 RUN_ARGS=$DEFAULT_JAVA_OPTIONS
