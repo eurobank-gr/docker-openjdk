@@ -1,10 +1,12 @@
-AdoptOpenJDK base image for running Java fat-jar applications
-=============================================================
+OpenJDK base image for running Java fat-jar applications
+========================================================
 
 Features:
-- Use `adoptopenjdk` base image (see: [Docker Images for OpenJDK Version 8 binaries built by AdoptOpenJDK](https://hub.docker.com/r/adoptopenjdk/openjdk8))
+- Use `adoptopenjdk/openjdk8` base image (see: [Docker Images for OpenJDK Version 8 binaries built by AdoptOpenJDK](https://hub.docker.com/r/adoptopenjdk/openjdk8))
 - Set `/tmp` as user/working directory, to enable running as non-root (see: [Running Docker containers as non root](https://blog.csanchez.org/2017/01/31/running-docker-containers-as-non-root/))
 - Show settings at JVM startup for debugging
+- Enable G1 garbage collector
 - Set flag to exit on OutOfMemory error
-- Use Java 10 options for memory control (see: [Docker and the JVM](https://www.javaadvent.com/2018/12/docker-and-the-jvm.html)), set to 50% initial and 80% max RAM
-- Support overriding of default options through `JAVA_OPTS` environmental variable
+- Set max RAM fraction to 2 to allocate half of container memory for heap (see: [Running a JVM in a Container Without Getting Killed](https://blog.csanchez.org/2017/05/31/running-a-jvm-in-a-container-without-getting-killed/))
+- Enable detection of container-limited amount of RAM (see: [Make JVM respect CPU and RAM limits](https://hub.docker.com/_/openjdk/))
+- Support overriding of default options through `JAVA_OPTIONS` environmental variable
