@@ -1,4 +1,4 @@
-FROM openjdk:11.0.3-jdk-slim
+FROM adoptopenjdk/openjdk11:jdk-11.0.3_7-slim
 
 WORKDIR /tmp
 ADD run.sh /run.sh
