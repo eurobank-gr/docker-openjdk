@@ -8,3 +8,4 @@ Features:
 - Set flag to exit on OutOfMemory error
 - Use Java 10 options for memory control (see: [Docker and the JVM](https://www.javaadvent.com/2018/12/docker-and-the-jvm.html)), set to 50% initial and 80% max RAM
 - Support overriding of default options through `JAVA_OPTIONS` environmental variable
+- Include `lsof`, `net-tools`, `iputils-ping` OS packages 
