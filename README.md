@@ -10,3 +10,4 @@ Features:
 - Set max RAM fraction to 2 to allocate half of container memory for heap (see: [Running a JVM in a Container Without Getting Killed](https://blog.csanchez.org/2017/05/31/running-a-jvm-in-a-container-without-getting-killed/))
 - Enable detection of container-limited amount of RAM (see: [Make JVM respect CPU and RAM limits](https://hub.docker.com/_/openjdk/))
 - Support overriding of default options through `JAVA_OPTIONS` environmental variable
+- Include `lsof`, `net-tools`, `iputils-ping` OS packages 
