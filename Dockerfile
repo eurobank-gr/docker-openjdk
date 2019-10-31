@@ -1,8 +1,8 @@
-FROM adoptopenjdk/openjdk11:jdk-11.0.4_11-slim
+FROM openjdk:11.0.5-jdk-slim
 
 RUN apt-get update || true \
 	&& apt-get dist-upgrade -y \
-	&& apt-get install -y lsof net-tools iputils-ping \
+	&& apt-get install -y lsof net-tools iputils-ping telnet \
 	&& rm -rf /var/lib/apt/lists/*
 
 WORKDIR /tmp
