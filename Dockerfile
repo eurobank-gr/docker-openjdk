@@ -1,4 +1,4 @@
-FROM openjdk:11.0.6-jdk-slim
+FROM openjdk:11.0.9.1-jdk-slim
 
 RUN apt-get update || true \
 	&& apt-get dist-upgrade -y \
