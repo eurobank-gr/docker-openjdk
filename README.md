@@ -2,7 +2,7 @@ OpenJDK base image for running Java fat-jar applications
 ========================================================
 
 Features:
-- Use `openjdk` base image (see: [openjdk - Docker Official Images](https://hub.docker.com/_/openjdk)
+- Use `openjdk` base image (see: [openjdk - Docker Official Images](https://hub.docker.com/_/openjdk))
 - Set `/tmp` as user/working directory, to enable running as non-root (see: [Running Docker containers as non root](https://blog.csanchez.org/2017/01/31/running-docker-containers-as-non-root/))
 - Show settings at JVM startup for debugging
 - Enable G1 garbage collector
