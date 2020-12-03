@@ -1,4 +1,4 @@
-FROM openjdk:11.0.9.1-jdk
+FROM openjdk:11.0.4-jdk
 
 RUN apt-get update || true \
 	&& apt-get dist-upgrade -y \
