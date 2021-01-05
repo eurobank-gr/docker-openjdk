@@ -2,7 +2,7 @@ FROM openjdk:11.0.4-jdk
 
 RUN apt-get update || true \
 	&& apt-get dist-upgrade -y \
-	&& apt-get install -y lsof net-tools iputils-ping telnet \
+	&& apt-get install -y --no-install-recommends libfontconfig1 lsof net-tools iputils-ping telnet \
 	&& rm -rf /var/lib/apt/lists/*
 
 WORKDIR /tmp
