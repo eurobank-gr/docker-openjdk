@@ -1,4 +1,4 @@
-FROM openjdk:8u275-jdk-slim
+FROM openjdk:8u322-jdk-slim
 
 RUN apt-get update || true \
 	&& apt-get dist-upgrade -y \
